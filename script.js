@@ -115,7 +115,7 @@ const renderGallery = (items) => {
   if (!galleryGrid) return;
   galleryGrid.innerHTML = items.map((project, index) => `
     <button class="project-card reveal ${project.category}" data-filter-category="${project.category}" data-image="${project.image}" data-category="${categoryLabels[project.category]}" aria-label="View ${categoryLabels[project.category]} image">
-      <img src="${project.image}" alt="${categoryLabels[project.category]}" loading="eager">
+      <img src="${project.image}" alt="${categoryLabels[project.category]} furniture in Bangalore" loading="lazy">
       <span class="project-caption"><small>${categoryLabels[project.category]}</small><i aria-hidden="true">↗</i></span>
     </button>
   `).join('');
