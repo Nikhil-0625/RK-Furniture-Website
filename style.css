@@ -89,38 +89,29 @@ body::after{background:rgba(0,0,0,.1)}
 @media(max-width:900px){.section-pad{padding:105px 0}.intro,.services,.portfolio,.why,.process,.contact{margin-top:28px;margin-bottom:28px}}
 @media(max-width:560px){.section-pad{padding:88px 0}.intro,.services,.portfolio,.why,.process,.contact{width:calc(100% - 24px);margin-top:18px;margin-bottom:18px}}
 
-/* Keep reviews legible above the site's general glass and reveal treatments. */
-.reviews{background:#3b2b25;backdrop-filter:none;-webkit-backdrop-filter:none;border:1px solid rgba(213,173,106,.3);box-shadow:0 24px 60px rgba(35,22,16,.28)}
-.reviews .section-heading h2{color:#fff9ef;text-shadow:0 2px 16px rgba(0,0,0,.28)}
-.reviews .section-heading h2 em,.reviews .section-heading .eyebrow{color:#e2bd7f}
-.reviews .heading-copy{color:#f1e4d3}
-.reviews .review-card{background:#fffaf0;border-color:rgba(226,189,127,.42);box-shadow:0 18px 38px rgba(25,15,10,.22)}
-.reviews .review-card blockquote{color:#2b211c}
-.reviews .review-card cite{color:#604b3d}
-.reviews .review-rating,.reviews .quote-mark{color:#a56f2f}
-.reviews .review-stats{border-top-color:rgba(255,239,211,.35)}
-.reviews .review-stat strong{color:#e2bd7f;text-shadow:0 2px 10px rgba(0,0,0,.25)}
-.reviews .review-stat span{color:#f1e4d3}
-.reviews .reveal.visible{opacity:1;transform:none;filter:none}
-@media(max-width:560px){.reviews{padding-left:0;padding-right:0}.reviews .container{width:calc(100% - 48px)}}
-
 .service-page{min-height:100vh;background:var(--cream);padding:150px 0 90px}.service-page .container{max-width:1000px}.service-page-header{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;margin-bottom:65px}.service-page h1{font:600 clamp(42px,6vw,76px)/1.05 var(--serif);letter-spacing:-.04em}.service-page h1 em{color:var(--gold);font-style:italic}.service-page-intro{color:var(--muted);font-size:17px;max-width:480px;margin-top:25px}.service-page-image{width:100%;height:350px;object-fit:cover;border-radius:18px;box-shadow:0 24px 60px rgba(63,45,28,.14)}.service-page h2{font:600 clamp(30px,4vw,48px)/1.1 var(--serif);margin-bottom:18px}.service-page p{color:var(--muted);max-width:720px}.service-page-content{display:grid;grid-template-columns:1fr 1fr;gap:55px;margin-bottom:55px}.service-page-list{display:grid;gap:14px;margin-top:22px;padding:0;list-style:none}.service-page-list li{border-top:1px solid var(--line);padding:14px 0;color:var(--muted)}.service-page-links{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:28px}.service-page-links a:not(.button){border-bottom:1px solid var(--gold);padding-bottom:5px;font-size:13px;font-weight:700}.service-page-contact{background:rgba(255,255,255,.65);padding:30px;border:1px solid rgba(177,138,83,.25);margin-top:55px}.service-page-contact p{margin:8px 0}.service-page-contact a{color:var(--brown);font-weight:700}@media(max-width:760px){.service-page{padding:120px 0 65px}.service-page-header,.service-page-content{grid-template-columns:1fr;gap:35px}.service-page-image{height:280px}}
 
-/* Reviews carry the same warm glass finish while giving each client story room to breathe. */
-.reviews{background:rgba(255,255,255,.3);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);margin:42px 0;box-shadow:0 24px 60px rgba(0,0,0,.1)}
+/* Reviews use a solid chapter background so the statistics stay crisp. */
+.reviews{background:#3b2b25;backdrop-filter:none;-webkit-backdrop-filter:none;margin:42px 0;border:1px solid rgba(213,173,106,.3);box-shadow:0 24px 60px rgba(35,22,16,.28)}
 .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:72px}
-.review-card{position:relative;min-height:285px;padding:42px 32px 30px;background:rgba(255,253,249,.72);border:1px solid rgba(177,138,83,.2);box-shadow:0 16px 35px rgba(63,45,28,.07);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
+.review-card{position:relative;min-height:285px;padding:42px 32px 30px;background:#fffaf0;border:1px solid rgba(226,189,127,.42);box-shadow:0 18px 38px rgba(25,15,10,.22);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
 .review-card:hover{transform:translateY(-8px);border-color:var(--gold);box-shadow:0 24px 45px rgba(63,45,28,.14)}
 .quote-mark{position:absolute;top:10px;right:24px;color:var(--gold);font:600 68px/1 var(--serif);opacity:.45}
 .review-rating{color:var(--gold);font-size:16px;letter-spacing:.16em;margin-bottom:24px}
-.review-card blockquote{color:var(--ink);font:500 18px/1.55 var(--serif);max-width:320px}
-.review-card cite{display:block;color:var(--muted);font-size:12px;font-style:normal;margin-top:24px}
-.review-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;border-top:1px solid var(--line);margin-top:70px;padding-top:28px}
-.review-stat strong{display:block;color:var(--brown);font:600 clamp(30px,3.5vw,48px)/1 var(--serif)}
-.review-stat span{display:block;color:var(--muted);font-size:12px;margin-top:9px}
+.review-card blockquote{color:#2b211c;font:500 18px/1.55 var(--serif);max-width:320px}
+.review-card cite{display:block;color:#604b3d;font-size:12px;font-style:normal;margin-top:24px}
+.review-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative;isolation:isolate;background:#3b2b25;background-image:none;backdrop-filter:none;-webkit-backdrop-filter:none;filter:none;border-top:1px solid rgba(255,239,211,.35);margin-top:70px;padding:28px 0 0}
+.review-stat strong{display:block;color:#e2bd7f;text-shadow:0 2px 10px rgba(0,0,0,.25);font:600 clamp(30px,3.5vw,48px)/1 var(--serif)}
+.review-stat span{display:block;color:#fff9ef;font-size:12px;margin-top:9px}
+.reviews .section-heading h2{color:#fff9ef;text-shadow:0 2px 16px rgba(0,0,0,.28)}
+.reviews .section-heading h2 em,.reviews .section-heading .eyebrow{color:#e2bd7f}
+.reviews .heading-copy{color:#f1e4d3}
+.review-rating,.quote-mark{color:#a56f2f}
+.reviews .reveal.visible{opacity:1;transform:none;filter:none}
 .contact-details p:last-child a{overflow-wrap:anywhere}
 @media(max-width:900px){.reviews{margin-top:28px;margin-bottom:28px}.review-grid{grid-template-columns:1fr 1fr}.review-card:last-child{grid-column:1/-1}.review-stats{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.reviews{width:calc(100% - 24px);margin-top:18px;margin-bottom:18px}.review-grid{grid-template-columns:1fr;margin-top:55px}.review-card:last-child{grid-column:auto}.review-stats{gap:24px 12px;margin-top:52px}.review-card{min-height:250px;padding:38px 25px 25px}}
+@media(max-width:560px){.reviews{padding-left:0;padding-right:0}.reviews .container{width:calc(100% - 48px)}}
 
 /* Flexible portfolio: duplicate a project-card block to add another project. */
 .portfolio-grid{grid-template-columns:repeat(3,1fr);gap:24px}
